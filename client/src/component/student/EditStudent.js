@@ -34,7 +34,7 @@ const EditStudent = () => {
 
 	const loadStudent = async () => {
 		const result = await axios.get(
-			`http://localhost:8080/student/${id}`
+			`https://student-management-system-irv8.onrender.com/student/${id}`
 		);
 		setStudent(result.data);
 	};
@@ -48,7 +48,7 @@ const EditStudent = () => {
 	const updateStudent = async (e) => {
 		e.preventDefault();
 		await axios.put(
-			`http://localhost:8080/student/update/${id}`,
+			`https://student-management-system-irv8.onrender.com/student/update/${id}`,
 			student
 		);
 		navigate("/view-students");

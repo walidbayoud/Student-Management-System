@@ -29,7 +29,7 @@ const AddStudent = () => {
 	const saveStudent = async (e) => {
 		e.preventDefault();
 		await axios.post(
-			"http://localhost:8080/student",
+			"https://student-management-system-irv8.onrender.com/student",
 			student
 		);
 		navigate("/view-students");

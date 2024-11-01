@@ -21,7 +21,7 @@ const StudentPofile = () => {
 
 	const loadStudent = async () => {
 		const result = await axios.get(
-			`http://localhost:8080/student/${id}`
+			`https://student-management-system-irv8.onrender.com/student/${id}`
 		);
 		setStudent(result.data);
 	};
